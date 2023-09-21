@@ -1,0 +1,189 @@
+.show-flowers .flower {
+    display: block;
+    animation: rotateIn 2s ease both;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: scale(0.2) rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.show-content {
+    display: block;
+    animation: fadeIn 1s ease both;
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px
+}
+body{
+    background-image: url(https://www.xtrafondos.com/descargar.php?id=7319&resolucion=2560x1440);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-window{
+    text-align: center;
+    display: grid;
+    position: absolute;
+    height: 60%;
+    width: 500px;
+    border: 5px solid #4CAF50;
+    border-radius: 10px;
+    margin-top: 500px;
+    background-color: #FBC02D;
+}
+.button-window h1, button, p{
+    margin: 30px;
+}
+button{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    color: #BA68C8;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 4px;
+    height: 100px !important;
+    width: 150px !important;
+    z-index: 1;
+}
+
+.bluoquet-flower{
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.flower {
+    display: none;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.petal {
+    width: 100px;
+    height: 200px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.petal:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.petal:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.petal:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.petal:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.petal:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(240deg);
+}
+
+.petal:nth-child(6 ) {
+    transform: translate(-50%, -50%) rotate(300deg);
+}
+
+.center{
+    width: 80px;
+    height: 80px;
+    background: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#clic {
+    display: block; 
+}
+#contenido {
+    border-radius: 15px  ;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    background-color: #FBC02D;
+    display: none;
+}
+img{
+    height: 315px;
+    width: 225px;
+}
+h1{
+font-size: 40px;
+color: #BA68C8;
+}
+p {
+    font-size: 25px;
+    color: #BA68C8;
+}
+
+
+#contenido {
+    opacity: 0;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
